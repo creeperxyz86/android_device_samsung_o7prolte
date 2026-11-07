@@ -24,4 +24,7 @@
          don't support RIL_REQUEST_GET_RADIO_CAPABILITY
          format is UMTS|LTE|... -->
     <string translatable="false" name="config_radio_access_family">LTE|GSM|GPRS|EDGE|UMTS|HSPA|HSPAP</string>
+
+<!--  IMS package used for Treble/VoLTE support  -->
+<string name="config_ims_package" translatable="false">com.on7.imsbridge</string>
 </resources>

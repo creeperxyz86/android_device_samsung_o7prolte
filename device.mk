@@ -11,3 +11,15 @@ LOCAL_PATH := device/samsung/o7prolte
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
+# PRODUCT_PACKAGES += phh-ims
+PRODUCT_PACKAGES += On7ImsBridge
+
+# PRODUCT_COPY_FILES += \
+#     device/samsung/o7prolte/phh-ims/privapp-permissions-phh-ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-phh-ims.xml
+
+# Enable VoLTE/VoWiFi UI
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1
